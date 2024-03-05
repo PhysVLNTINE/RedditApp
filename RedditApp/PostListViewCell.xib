@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="300" id="KGk-i7-Jjw" customClass="PostListViewCell" customModule="RedditApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="445"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="445"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N27-1L-Dy3" userLabel="UserName">
+                        <rect key="frame" x="5" y="1" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="•" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e63-eb-7KK" userLabel="Dot1">
+                        <rect key="frame" x="48" y="1" width="8" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zI1-yR-wFt" userLabel="TimePassed">
+                        <rect key="frame" x="57" y="1" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="•" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFF-WG-1he" userLabel="Dot2">
+                        <rect key="frame" x="100" y="1" width="8" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBL-Zn-iUV" userLabel="Domain">
+                        <rect key="frame" x="109" y="1" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eu9-PQ-SlW" userLabel="Title">
+                        <rect key="frame" x="5" y="42" width="315" height="24"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GR2-fV-bOV">
+                        <rect key="frame" x="0.0" y="66" width="320" height="334"/>
+                    </imageView>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zqX-I8-NYZ" userLabel="RatingButton">
+                        <rect key="frame" x="0.0" y="405" width="99" height="40"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" button="YES" notEnabled="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="NfN-Qa-cy6"/>
+                        </constraints>
+                        <color key="tintColor" name="AccentColor"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" imagePlacement="leading" title="Num" titleAlignment="leading">
+                            <imageReference key="image" image="arrow.up.square" catalog="system" symbolScale="large"/>
+                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20" scale="default"/>
+                            <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
+                            <color key="baseForegroundColor" systemColor="tintColor"/>
+                        </buttonConfiguration>
+                    </button>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1J6-P0-O8D" userLabel="CommentsButton">
+                        <rect key="frame" x="108" y="405" width="104" height="40"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" button="YES" notEnabled="YES"/>
+                        </accessibility>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" imagePlacement="leading" title="Num" titleAlignment="leading">
+                            <imageReference key="image" image="bubble.right" catalog="system" symbolScale="large"/>
+                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20" scale="default"/>
+                            <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
+                            <color key="baseForegroundColor" systemColor="tintColor"/>
+                        </buttonConfiguration>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULU-kS-0PV" userLabel="ShareButton">
+                        <rect key="frame" x="212" y="405" width="108" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="VDe-SP-RwW"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" imagePlacement="leading" title="Share" titleAlignment="leading">
+                            <imageReference key="image" image="square.and.arrow.up" catalog="system" symbolScale="large"/>
+                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20" scale="default"/>
+                            <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
+                            <color key="baseForegroundColor" systemColor="tintColor"/>
+                        </buttonConfiguration>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eK9-gx-J6a" userLabel="BookmarkButton">
+                        <rect key="frame" x="270" y="1" width="50" height="38"/>
+                        <color key="tintColor" systemColor="tintColor"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="bookmark" catalog="system">
+                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20"/>
+                        </buttonConfiguration>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                <constraints>
+                    <constraint firstItem="eu9-PQ-SlW" firstAttribute="leading" secondItem="N27-1L-Dy3" secondAttribute="leading" id="5mW-HS-Qaq"/>
+                    <constraint firstItem="eu9-PQ-SlW" firstAttribute="top" secondItem="N27-1L-Dy3" secondAttribute="bottom" constant="20" id="7DW-nR-1n8"/>
+                    <constraint firstItem="zqX-I8-NYZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="95U-Kz-OQP"/>
+                    <constraint firstAttribute="trailing" secondItem="GR2-fV-bOV" secondAttribute="trailing" id="CpB-UZ-s3G"/>
+                    <constraint firstItem="N27-1L-Dy3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="1" id="FOX-YH-IJS"/>
+                    <constraint firstItem="eK9-gx-J6a" firstAttribute="top" secondItem="N27-1L-Dy3" secondAttribute="top" id="HWa-HG-eyj"/>
+                    <constraint firstItem="oFF-WG-1he" firstAttribute="leading" secondItem="zI1-yR-wFt" secondAttribute="trailing" constant="1" id="IVd-WR-dtY"/>
+                    <constraint firstAttribute="trailing" secondItem="ULU-kS-0PV" secondAttribute="trailing" id="KHj-8b-d5K"/>
+                    <constraint firstItem="e63-eb-7KK" firstAttribute="leading" secondItem="N27-1L-Dy3" secondAttribute="trailing" constant="1" id="LHd-vq-kXn"/>
+                    <constraint firstAttribute="bottom" secondItem="zqX-I8-NYZ" secondAttribute="bottom" id="LUD-XI-AMK"/>
+                    <constraint firstItem="FBL-Zn-iUV" firstAttribute="top" secondItem="N27-1L-Dy3" secondAttribute="top" id="PSq-7c-hQ4"/>
+                    <constraint firstItem="1J6-P0-O8D" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="R2Z-g1-q1d"/>
+                    <constraint firstItem="e63-eb-7KK" firstAttribute="top" secondItem="N27-1L-Dy3" secondAttribute="top" id="SUU-Cb-S8D"/>
+                    <constraint firstItem="GR2-fV-bOV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="TGo-OX-9Dy"/>
+                    <constraint firstItem="eK9-gx-J6a" firstAttribute="trailing" secondItem="ULU-kS-0PV" secondAttribute="trailing" id="WIZ-BF-B7P"/>
+                    <constraint firstItem="1J6-P0-O8D" firstAttribute="top" secondItem="zqX-I8-NYZ" secondAttribute="top" id="asJ-A8-wwS"/>
+                    <constraint firstItem="GR2-fV-bOV" firstAttribute="top" secondItem="eu9-PQ-SlW" secondAttribute="bottom" id="dqo-6A-xr8"/>
+                    <constraint firstItem="oFF-WG-1he" firstAttribute="top" secondItem="N27-1L-Dy3" secondAttribute="top" id="drH-5M-eFO"/>
+                    <constraint firstItem="zqX-I8-NYZ" firstAttribute="top" secondItem="GR2-fV-bOV" secondAttribute="bottom" constant="5" id="gPh-rW-gyQ"/>
+                    <constraint firstItem="N27-1L-Dy3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="hCB-Vn-ZhV"/>
+                    <constraint firstItem="FBL-Zn-iUV" firstAttribute="leading" secondItem="oFF-WG-1he" secondAttribute="trailing" constant="1" id="kBi-Wr-Uaa"/>
+                    <constraint firstItem="zI1-yR-wFt" firstAttribute="leading" secondItem="e63-eb-7KK" secondAttribute="trailing" constant="1" id="lcF-71-jK9"/>
+                    <constraint firstAttribute="trailing" secondItem="eu9-PQ-SlW" secondAttribute="trailing" id="mey-S5-jBo"/>
+                    <constraint firstItem="zI1-yR-wFt" firstAttribute="top" secondItem="N27-1L-Dy3" secondAttribute="top" id="qgr-jX-DNu"/>
+                    <constraint firstItem="ULU-kS-0PV" firstAttribute="top" secondItem="zqX-I8-NYZ" secondAttribute="top" id="ufa-eI-HRK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="authorFullname" destination="N27-1L-Dy3" id="tFT-rM-KEN"/>
+                <outlet property="bookmarkButton" destination="eK9-gx-J6a" id="4aG-BL-EWL"/>
+                <outlet property="comments" destination="1J6-P0-O8D" id="aLk-z9-s6n"/>
+                <outlet property="domain" destination="FBL-Zn-iUV" id="ZBp-Sa-rQF"/>
+                <outlet property="postImage" destination="GR2-fV-bOV" id="snU-qf-O4E"/>
+                <outlet property="postTitle" destination="eu9-PQ-SlW" id="Dyn-kD-M5b"/>
+                <outlet property="rating" destination="zqX-I8-NYZ" id="zYD-bp-mzg"/>
+                <outlet property="shareButton" destination="ULU-kS-0PV" id="2iA-2C-xmv"/>
+                <outlet property="timePassed" destination="zI1-yR-wFt" id="YnQ-dA-xuj"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="231.69642857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow.up.square" catalog="system" width="128" height="114"/>
+        <image name="bookmark" catalog="system" width="112" height="128"/>
+        <image name="bubble.right" catalog="system" width="128" height="110"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
